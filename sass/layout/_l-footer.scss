@@ -64,14 +64,20 @@ footer{
     
     form{
 
+    .email{
+        display: flex;
+        justify-items: space-between;
+        flex-direction: row;
+
         input{
-            padding: 0.7rem;
+            padding: 0.72rem;
             width: 12rem;
+            max-height: 2rem;
             margin-left: -1rem;
             margin-top: 2rem;
-            font-size: 18px;
+            font-size: 14px;
             color:  map-get($colors ,btn1);
-            border: solid 1.5px map-get($colors , btn1 );
+            border: solid 2px map-get($colors , btn1 );
 
             @media screen and (min-width: map-get($breakpoint, md)) {
                 padding: 0.5rem;
@@ -90,25 +96,26 @@ footer{
         }
 
         .lnr.lnr-arrow-right{
-            font-size: 1.2rem;
-            margin-left: -0.5rem;
-            padding-bottom: 0.9rem;
-            padding-top:0.78rem ;
+            
+            font-size: 18px;
+            max-height: 2rem;
+            margin-top: 2rem;
             background-color:  map-get($colors ,btn1);
             color:  map-get($colors ,main);
             cursor: pointer;
             border: none;
             
             @media screen and (min-width: map-get($breakpoint, md)) {
-                padding-bottom: 0.76rem;
-                padding-top:0.54rem ;
+                
             }
             
         }
-
+    }
     }
 
     .icone-social{
+        margin-left: -3rem;
+
         @media screen and (min-width: map-get($breakpoint, lg)) {
         
             margin-left: 3rem;
@@ -131,6 +138,7 @@ footer{
         }
 
     }
+
 
 }
 

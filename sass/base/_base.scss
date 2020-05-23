@@ -37,8 +37,8 @@ h1 {
     letter-spacing: 4px;
     color: map-get($colors , contrast );
 
-    margin-left: 2rem;
     margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 h2 {
@@ -115,11 +115,11 @@ p{
     color:  map-get($colors , main );
 
     text-transform: uppercase;
-    padding: 0.8rem 2rem;
+    padding: 0.6rem 2rem;
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
-    width: 12rem;
+    width: 14rem;
     display: block;
     font-weight:bolder;
 

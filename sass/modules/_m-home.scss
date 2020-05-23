@@ -15,7 +15,7 @@
 
 
         .wrap{
-            height: 200vh;
+            height: 120vh;
             width: auto;
             
             
@@ -36,17 +36,15 @@
 
             .btn{ 
                 margin:-3rem auto auto 2rem;
-                
+
                 @media screen and (min-width: map-get($breakpoint, lg)) {
                     margin:-2rem auto auto 2rem;
                 }
             }
-            
-            
 
             .info-student{
                 margin-top: 4rem;
-                margin: 5rem auto auto;
+                margin: 5rem auto;
             }
 
             .img-student{
@@ -62,7 +60,6 @@
             }
         }
     }
-    
 
 /*#SECTION ABOUT================== */
     .section-about{
@@ -114,7 +111,7 @@
 
 /*#SECTION SERVICES================== */
 .section-services{
-    height: 340vh; 
+    height: 335vh; 
 
     @media screen and (min-width: map-get($breakpoint, md)) {
         height: 90vh; 
@@ -386,7 +383,7 @@
                     color: map-get($colors , contrast );
                     margin-left: 0.5rem;
                     margin-right: 0; 
-                    font-size: 14px;
+                    font-size: 12px;
                     
 
                     @media screen and (min-width: map-get($breakpoint, md)) {
@@ -400,6 +397,7 @@
                 p{
                     margin-left: 0.8rem;
                     font-size: 12px;
+                    margin-right: 0.5rem;
 
                     @media screen and (min-width: map-get($breakpoint, md)) {
                         margin: 0rem;
@@ -412,6 +410,7 @@
 
                 span.lnr{
                     padding-right:1rem ;
+                    
 
                     @media screen and (min-width: map-get($breakpoint, md)) {
                         padding-right:0rem ;
@@ -453,7 +452,7 @@
 
         }
 
-        .slide{
+        .slide-home{
 
             .smart{
                 display: block;
