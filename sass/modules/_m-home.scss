@@ -37,11 +37,12 @@
             .btn{ 
                 margin:-3rem auto auto 2rem;
                 
-            }
                 @media screen and (min-width: map-get($breakpoint, lg)) {
                     margin:-2rem auto auto 2rem;
                 }
             }
+            
+            
 
             .info-student{
                 margin-top: 4rem;
@@ -61,6 +62,7 @@
             }
         }
     }
+    
 
 /*#SECTION ABOUT================== */
     .section-about{
