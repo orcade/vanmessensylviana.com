@@ -114,7 +114,13 @@ footer{
     }
 
     .icone-social{
-        margin-left: -3rem;
+        margin-left: -4rem;
+
+        @media screen and (min-width: map-get($breakpoint, md)) {
+            margin-top: 1.2rem;
+            margin-left: -1rem;
+            
+        }
 
         @media screen and (min-width: map-get($breakpoint, lg)) {
         
@@ -131,6 +137,11 @@ footer{
         margin-left: 3rem;
         margin-right: -2rem;
         padding-bottom: 5rem;
+
+        @media screen and (min-width: map-get($breakpoint, md)) {
+            
+            
+        }
 
         @media screen and (min-width: map-get($breakpoint, lg)) {
             font-size: 18px;

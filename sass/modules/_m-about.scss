@@ -69,11 +69,15 @@
 
         .wrap{
             height: 200vh;
+            max-width: 1140px;
             
             @media screen and (min-width: map-get($breakpoint, md)) {
-                height: 40vh; 
+                height: 120vh; 
             }
             @media screen and (min-width: map-get($breakpoint, lg)) {
+                margin-left: auto;
+                margin-right: auto;
+                
                 
             }
         
@@ -88,6 +92,14 @@
                 }
 
             }
+
+            .content-about{
+                @media screen and (min-width: map-get($breakpoint, md)) {
+                    margin:6rem auto auto auto;
+                }
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    margin:8rem auto auto auto;
+                }
 
             h3{
                 text-transform: uppercase;
@@ -104,9 +116,11 @@
                 margin:2rem auto auto 2rem;
 
                 @media screen and (min-width: map-get($breakpoint, lg)) {
-                    margin:-2rem auto auto 2rem;
+                    margin:2rem auto auto 2rem;
                 }
             }
+
+        }
         }
     }
     
@@ -114,10 +128,16 @@
 
 /*#SECTION PROGRESSBAR================== */
 .section-progressbar{
+    max-width: 1140px;
     height: 60vh; 
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
 
     @media screen and (min-width: map-get($breakpoint, md)) {
-        height: 90vh; 
+        height: 70vh; 
         padding-top: 4rem;
         
     }
@@ -128,6 +148,11 @@
     }
 
         .wrap{
+
+        @media screen and (min-width: map-get($breakpoint, lg)) {
+            height:60vh;
+        
+        } 
         @media screen and (min-width: map-get($breakpoint, lg)) {
             height:80vh;
             
@@ -138,6 +163,11 @@
         } 
         .progress-bars{
             margin-right: 4rem;
+            @media screen and (min-width: map-get($breakpoint, lg)) {
+                margin-right: 2rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             h3{
                 margin-top: 2rem;
@@ -151,6 +181,14 @@
                 text-align: right;
                 margin-right: -2rem;
                 font-size: 14px;
+
+                @media screen and (min-width: map-get($breakpoint, md)) {
+                    margin-right: 0.5rem;
+                }
+
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    margin-right: 2rem;
+                }
             }
 
         
@@ -163,6 +201,9 @@
             border-radius: 15px;
             padding-bottom: 0.5rem;
             
+            @media screen and (min-width: map-get($breakpoint, md)) {
+                width: 90%;
+            }
         }
         span{
 
@@ -183,17 +224,28 @@
 
 }
 
-/*#SECTION ABOUT================== */
+/*#SECTION FEEDBACK================== */
 .section-feedback{
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        background-color:  map-get($colors ,bg-sect1);
+
+    }
 
     .wrap{
         height:160vh;
+
         
         @media screen and (min-width: map-get($breakpoint, md)) {
-            
+            height:100vh;
         }
         @media screen and (min-width: map-get($breakpoint, lg)) {
-            
+            height:200vh;
+            max-width: 1140px;
+
+            display: block;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .header-feedback{
@@ -218,9 +270,19 @@
         .feedback{
 
             .client{
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    background-color:  map-get($colors ,main);
+                    max-width: 500px;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    margin-left: auto;
+                    margin-right: auto;
+
+
+                }
 
                 .img-feedback{
-                    
+
                     width: 2rem;
                     margin-left: 2rem;
     
@@ -260,7 +322,7 @@
 }
 
 /*#SECTION SLIDE================== */
-.section-slide{
+.section-slide-about{
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
     height: 18rem;
 
@@ -277,11 +339,12 @@
         @media screen and (min-width: map-get($breakpoint, lg)) {
             
             height: 80vh;
-
+            
         }
 
         .slide-about{
             border-top: solid 100px map-get($colors ,bg-sect1);
+
             .smart{
                 display: block;
                 width: 45%;
@@ -306,6 +369,10 @@
                     margin-top:3rem ;
                     margin-left:4rem ;
                 }
+            }
+            .home{
+                margin-left: 0rem;
+                margin-right: 4rem;
             }
         }
 

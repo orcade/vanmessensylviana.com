@@ -27,8 +27,7 @@
                 padding-top: 5rem;
                 display: block;
                 max-width: 1140px;
-                margin-left: auto;
-                margin-right: auto;
+                
                 
             }
 
@@ -432,7 +431,7 @@
 } 
 
 /*#SECTION SLIDE================== */
-.section-slide{
+.section-slide-home{
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
     height: 14rem;
 
