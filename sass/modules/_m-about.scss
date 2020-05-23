@@ -343,18 +343,24 @@
         }
 
         .slide-about{
+            
             border-top: solid 100px map-get($colors ,bg-sect1);
+
+            img{
+                margin: auto;
+            }
+
 
             .smart{
                 display: block;
-                width: 45%;
+                width: 9rem;
                 margin: auto;
                 padding-top: 3rem;
                 
 
 
                 @media screen and (min-width: map-get($breakpoint, md)) {
-                    width: 12%;
+                    width: 5rem;
                     display: inline-block;
                 }
             
@@ -362,10 +368,11 @@
             .md-lg{
                 display: none;
                 
+                
                 @media screen and (min-width: map-get($breakpoint, md)) {
                     display: inline-block;
-                    width: 12%;
                     
+                    width: 5rem;
                     margin-top:3rem ;
                     margin-left:4rem ;
                 }

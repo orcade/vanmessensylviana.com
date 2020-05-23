@@ -110,7 +110,7 @@
 
 /*#SECTION SERVICES================== */
 .section-services{
-    height: 335vh; 
+    height: 325vh; 
 
     @media screen and (min-width: map-get($breakpoint, md)) {
         height: 90vh; 
@@ -179,6 +179,7 @@
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
     width: 100%;
 
+
     @media screen and (min-width: map-get($breakpoint, md)) {
         height: 20vh; 
     }
@@ -192,6 +193,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        
     
         @media screen and (min-width: map-get($breakpoint, md)) {
             flex-direction: row;
@@ -254,8 +256,8 @@
 
 /*#SECTION GALERY================== */
 .section-gallery{
-    height: 440vh;
-    margin-top: 3rem;
+    height: 500vh;
+    margin-top: 5rem;
 
     @media screen and (min-width: map-get($breakpoint, md)) {
     height: 80vh; 
@@ -307,6 +309,7 @@
 .section-blog{
     background-color:  map-get($colors ,bg-sect1);
     padding-top: 3rem;
+    margin-top: 2rem;
     
 
     .wrap{
@@ -433,7 +436,7 @@
 /*#SECTION SLIDE================== */
 .section-slide-home{
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
-    height: 14rem;
+    height: 12rem;
 
     .wrap{
         @media screen and (min-width: map-get($breakpoint, md)) {
@@ -452,17 +455,20 @@
         }
 
         .slide-home{
+            img{
+                margin: auto;
+            }
 
             .smart{
                 display: block;
-                width: 45%;
+                width: 9rem;
                 margin: auto;
                 padding-top: 3rem;
                 
 
 
                 @media screen and (min-width: map-get($breakpoint, md)) {
-                    width: 12%;
+                    width: 5rem;
                     display: inline-block;
                 }
             
@@ -472,8 +478,8 @@
                 
                 @media screen and (min-width: map-get($breakpoint, md)) {
                     display: inline-block;
-                    width: 12%;
                     
+                    width: 5rem;
                     margin-top:3rem ;
                     margin-left:4rem ;
                 }
