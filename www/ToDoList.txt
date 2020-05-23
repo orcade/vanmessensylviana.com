@@ -1,0 +1,169 @@
+Rue Saint-Laurent 33
+4000 Liège
+1 Consigne exercice final
+Bonjour,
+Le client Jaques Durant souhaite que vous réalisiez son site avec les dernières technologies web
+actuelles. Il souhaite que son site soit bien optimisé pour le référencement et le plus accessible possible.
+Voici les informations techniques que le graphiste lui a fournies.
+• Largeur maximum: 1140px
+
+-• Police: Poppins, sans-serif
+-• Couleurs
+  ◦ Btn1: #8490ff
+  ◦ Btn2: #62bdfc
+  ◦ Couleur3: #fff
+  ◦ txt: #777777
+  ◦ title: #222222
+  ◦ link: #8490ff
+  ◦ bannerBg1: #8490ff
+  ◦ bannerBg2: #62bdfc
+
+Le client souhaite évidemment que son site soit disponible sur un maximum de navigateur et d’appareil
+différent. Le graphiste lui a envoyé le résultat final.
+Vous ne devez pas obtenir une copie conforme du design, mais respecter la philosophie du projet.
+N’oubliez pas d’ajouter les points qui ont été abordés (animation, image multiple pour le responsive,
+etc.)
+1.1 Grille d’évaluation
+La grille d’évaluation va être construite en classe. Je me réserve le droit d’ajouter différents critères qui
+ont été abordés pendant le cours. Je me réserve aussi la répartition de la pondération. La grille hors
+pondération vous sera envoyée au plus vite.
+1.2 Date de dépôt du travail
+Le travail doit être déposé pour le 20 mai 2020 à 19h. Faites bien attention de déposer le travail avant
+cette date. Le travail doit aussi être placé en ligne, n’oubliez pas d’indiquer l’adresse que je puisse y
+accéder.
+Last update : 29/03/2020 16:35:03 Page 1/1 Author: Ludovic Evrard
+
+
+http://minimir.isl.be/cedric.dujardin/TravailFinal/?fbclid=IwAR2JCCZFDzX_2x7pygsA8oQ2Aci0BudB9Uhy_qYfkgfI2YErYKIE3ezhbkw/BLOG
+
+@function get-contrast-color($color, $pourcent) {
+    @if brightness($color) > 50 {
+        @return darken($color, $pourcent);
+    }
+    @else {
+        @return lighten($color, $pourcent);
+    }
+}
+
+@function get-intense-color($color, $pourcent) {
+    @if brightness($color) < 50 {
+        @return darken($color, $pourcent);
+    }
+    @else {
+        @return lighten($color, $pourcent);
+    }
+}
+
+@mixin custom-opacity($opacity) {
+    filter:alpha(opacity=($opacity*100));
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
+}
+
+@mixin custom-user-select($property) {
+    -webkit-touch-callout: $property;
+    -webkit-user-select: $property;
+    -khtml-user-select: $property;
+    -moz-user-select: $property;
+    -ms-user-select: $property;
+    user-select: $property;
+}
+
+grid inspired https://chierchia.fr/blog/definir-une-grille-de-mise-en-page-avec-sass/
+
+
+
+//stucture
+//html
+//menu
+//header 
+//footer 
+//main:
+    //home 
+    //about 
+    //blog
+    //portfolio 
+    //contact 
+//grid
+//variable color size...
+breackpoint
+mixins
+functions
+mise en ligne test
+seo  
+optimisation
+test navigateur grid
+w3c validator
+verif dossier
+
+breakpoint et mediaqueries:
+css smartphone
+    //menu
+    header 
+    footer 
+css main:
+    home 
+    about 
+    blog
+    portfolio 
+    contact 
+
+css tablette
+    //menu
+    header 
+    footer 
+css main:
+    home 
+    about 
+    blog
+    portfolio 
+    contact 
+
+css desktop
+    //menu
+    header 
+    footer 
+css main:
+    home 
+    about 
+    blog
+    portfolio 
+    contact 
+
+test navigateur css
+js 
+scroll
+test
+mise en ligne final 
+test apres mise en ligne 
+
+
+@media screen and (min-width: map-get($break-point, lg)) {
+    a.hover{
+
+        &:hover:before {
+            display: block;
+            content: "";
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-bottom: 3px solid map-get($colors , primaryGreen );
+            border-left: 3px solid map-get($colors , primaryGreen );
+        }
+
+        &:hover:after {
+            display: block;
+            content: "";
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-top: 3px solid map-get($colors , primaryGreen );;
+            border-right: 3px solid map-get($colors , primaryGreen );;
+        }
+
+    }

@@ -1,0 +1,29 @@
+$breakpoint: (
+    md:  720px,
+    lg:  960px
+);
+
+$columns: 12 !default;
+
+$primary-font: "Poppins";
+
+$default-font-size: 20px;
+
+$colors: (
+    btn1:      #8490ff,
+    btn2:      #62bdfc,
+    main:      #fff,
+    txt:       #777777,
+    title:     #222222,
+    link:      #8490ff,
+    bannerBg1: #8490ff,
+    bannerBg2: #62bdfc,
+    contrast:  black,
+    hover:     #8490ff,
+    bg-footer: #06081d,
+    bg-sect1:  #faf9ff
+);
+
+// vars hamburger
+$animation: 0.6s;	// animation speed
+$scale: 1;			  // icon scale 68/68 default

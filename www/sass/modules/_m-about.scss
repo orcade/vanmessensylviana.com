@@ -1,0 +1,193 @@
+.wrap-m-about{
+    position: relative;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+/*#SECTION BANNER================== */
+    .section-banner{
+        height: 35vh;
+        background-image: linear-gradient(to right, map-get($colors, bannerBg1), map-get($colors, bannerBg2));
+        width: 100%;
+        margin-top: -1rem;
+
+
+        .banner{
+            text-transform: none;
+            color:map-get($colors, main);
+            font-size: 50px;
+            margin-left:auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 3rem;
+        }
+        
+        ul{
+            text-align: center;
+            font-size: 18px;
+
+            li{
+                color:map-get($colors, main);
+                display: inline-block;
+                
+                
+            }
+            a{
+                color:map-get($colors, main);
+                text-decoration: none;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover{
+                    color: map-get($colors,bannerBg2);
+                    font-weight: bolder;
+                }
+            }
+
+            .lnr{
+                padding-right: 1rem;
+                padding-left: 1.2rem;
+            }
+        }
+
+            
+            
+            
+            @media screen and (min-width: map-get($breakpoint, md)) {
+
+            }
+            @media screen and (min-width: map-get($breakpoint, lg)) {
+                
+            }
+
+    }
+
+/*#SECTION ABOUT================== */
+    .section-about{
+
+        .wrap{
+            height: 140vh;
+            
+            @media screen and (min-width: map-get($breakpoint, md)) {
+                height: 40vh; 
+            }
+            @media screen and (min-width: map-get($breakpoint, lg)) {
+                
+            }
+        
+            .img-about{
+                padding-top: 4rem; 
+
+                @media screen and (min-width: map-get($breakpoint, md)) {
+                    margin:7rem auto auto auto;  
+                }
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    margin:3rem auto auto auto;  
+                }
+
+            }
+
+            h3{
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            p{
+                padding-top:1rem ;
+
+            }
+            .btn{ 
+                margin:2rem auto auto 2rem;
+
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    margin:-2rem auto auto 2rem;
+                }
+            }
+        }
+    }
+    
+
+
+/*#SECTION PROGRESSBAR================== */
+.section-progressbar{
+    height: 120vh; 
+
+    @media screen and (min-width: map-get($breakpoint, md)) {
+        height: 90vh; 
+        padding-top: 4rem;
+        
+    }
+    
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        height:70vh;
+    
+    }
+
+        .wrap{
+        @media screen and (min-width: map-get($breakpoint, lg)) {
+            height:80vh;
+            
+            display: block;
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        .progress-bars{
+            margin-right: 4rem;
+
+            h3{
+                margin-top: 2rem;
+                text-transform: none;
+                text-align: left;
+                
+                
+            }
+
+            p {
+                text-align: right;
+                margin: 0;
+            }
+
+        
+        .progress-bar{
+            position: relative;
+            
+    
+            width: 100%;
+            height: 0.3rem;
+            background-color: rgb(207, 207, 207);
+            border: 4px solid rgb(207, 207, 207);
+            margin-left: 2rem;
+            border-radius: 15px;
+            padding-bottom: 1.5rem;
+
+            
+        }
+        span[value]{
+
+    
+            width: 250px;
+            height: 20px;
+                    position: absolute;
+                    background-color: map-get($colors,btn1);
+                    background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
+                    content: '';
+                    border-radius: 15px;
+                    height: 0.5rem;
+                    padding-bottom: 1.5rem; 
+                    }
+
+        
+
+
+}
+
+}
+
+}
+
+
+}

@@ -1,0 +1,14 @@
+html, body, div, span, h1, h2, p, a, strong, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, table,
+tbody, tfoot, thead, tr, th, td, footer, header, menu, nav
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}

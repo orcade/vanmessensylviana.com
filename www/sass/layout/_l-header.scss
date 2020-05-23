@@ -1,0 +1,227 @@
+/*#header & menu ham================== */
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:0rem auto 0rem 0rem;
+    z-index: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: map-get($colors,main);
+    z-index: 999;
+
+    box-shadow: 0 2px 4px 0 rgba(52, 52, 52, 0.041);
+
+
+}
+
+.wrap-l-header {
+    
+@media screen and (min-width: map-get($breakpoint, lg)) {
+    max-width: 1140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+}
+
+.logo-l-header{
+    display:block;
+    width: 9.5rem;
+    margin:1rem ;
+    cursor: pointer;
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        margin-left: 1rem;
+    }
+}
+.menu-hamburger {
+    z-index: 999;
+    width: 2rem;
+    height: 2rem;
+    margin:-2.5rem 2rem 1rem 1rem;
+    right: 0;
+    
+    @include transform(rotate(0deg));
+    @include transition(.5s ease-in-out);
+    cursor: pointer;
+    position: fixed;
+
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        display: none;
+    }
+
+
+    & span {
+        display: block;
+        position: absolute;
+        height: .16rem;
+        width: 100%;
+        margin-top: -.16rem;
+        
+        
+        background: map-get($colors, contrast);
+        border-radius: 0.15rem;
+        opacity: 1;
+        left: 0;
+        z-index: 999;
+        @include transform(rotate(0deg));
+        @include transition(.25s ease-in-out);
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+            top: .6rem;
+        }
+
+        &:nth-child(4) {
+            top: 1.2rem;
+        }
+        @media screen and (min-width: map-get($breakpoint, lg)) {
+            display: none;
+            
+        }
+    }
+
+    &.is-open {
+        position: relative;
+        z-index: 999;
+        display: block;
+        float: right;
+        span {
+            background: map-get($colors,contrast);
+            
+            &:nth-child(1) {
+                top: 0rem;
+                width: 0%;
+                float: right;
+            }
+            
+            &:nth-child(2) {
+                @include transform(rotate(45deg));
+            }
+            
+            &:nth-child(3) {
+                @include transform(rotate(-45deg));
+            }
+            
+            &:nth-child(4) {
+                top: 0rem;
+                width: 0%;
+                float: right;
+            }
+        }
+
+        &:before {
+            background: transparent;
+        }
+    }
+   
+}
+
+.l-menu-main {
+    text-align: left;
+    z-index: 999;
+    margin-top: -4rem;
+    width: 100%;
+    height: auto;
+    display: none;
+    
+
+    @include transition(.2s ease-in-out);
+    background-color: rgba(4, 6, 29, 0.37);
+
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        display: inline-block;
+        background: transparent;
+    }
+
+&.is-visible {
+    right: 0;
+    display: block;
+    right: -100rem;
+
+}
+
+.is-active{
+    color: map-get($colors,btn1);
+}
+
+@media screen and (min-width: map-get($breakpoint, lg)) {
+
+
+}
+ul {
+    margin-top: -1rem;
+    padding-top: 6rem;
+    text-align: left;
+    background-color: rgba(46, 44, 47, 0.9);
+    width: 70% ;
+    height: 100vh;
+
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        display: inline-block;
+        float: right;
+        padding: 2rem;
+        background: transparent;
+        margin-top: -1.5rem;
+        
+
+
+        
+    }
+
+li{
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        display: inline-block;
+        
+        
+    }
+}
+
+a {
+    
+    text-decoration: none;
+    padding: 1rem 2rem;
+    text-align: left;
+    line-height: 3rem;
+    color: map-get($colors,main);
+    
+    &:hover{
+        color: map-get($colors,hover);
+    }
+
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+        color: map-get($colors, contrast);
+        
+        font-size: 20px;
+        
+    }
+
+}
+
+    @media screen and (min-width: map-get($breakpoint, lg)) {
+
+        width: auto;
+        height: auto;
+
+        display: block;
+        position: relative;
+        right: 0;
+        background: transparent;
+    }
+
+    &.is-visible {
+        right: 0rem;
+    }
+}
+
+
+
+}
+
+
+

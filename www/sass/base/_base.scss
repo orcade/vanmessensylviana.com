@@ -1,0 +1,132 @@
+
+/* mobile first css */
+
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    background-color: white;
+    margin: 0rem;
+    padding: 0rem;
+    width: auto; 
+    font-size: 20px;
+    font-family: $primary-font;
+}
+
+main{
+    margin-top:5rem;
+    padding: 0rem;
+    
+    
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 1rem;
+    letter-spacing: 4px;
+    color: map-get($colors , contrast );
+
+    margin-left: 2rem;
+}
+
+h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 2rem;
+    color: map-get($colors , contrast );
+
+    margin-right: 2rem;
+    margin-left: 2rem;
+    
+}
+
+h3{
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    color: map-get($colors , contrast );
+    font-weight: bolder;
+
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+h4{
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2rem;
+    color: map-get($colors , contrast );
+    font-weight: bolder;
+
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+h5{
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -1rem;
+    color: map-get($colors , txt );
+    
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+
+a {
+    font-size: 20px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+
+p{
+    font-size:  16px;
+    line-height: 1.5rem;
+    color: map-get($colors , txt );
+    margin:1rem 2rem auto 2rem;
+
+}
+
+
+.btn{
+    background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
+    color:  map-get($colors , main );
+
+    text-transform: uppercase;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 14rem;
+    display: block;
+    font-weight:bolder;
+
+        &:hover{
+            box-shadow: 0 6px 10px 0 rgba(52,52,52,0.1);
+        }
+    
+}
+
+
+
