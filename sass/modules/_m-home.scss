@@ -15,7 +15,7 @@
 
 
         .wrap{
-            height: 220vh;
+            height: 200vh;
             width: auto;
             
             
@@ -35,8 +35,9 @@
             
 
             .btn{ 
-                margin:-2rem auto auto 2rem;
-
+                margin:-3rem auto auto 2rem;
+                
+            }
                 @media screen and (min-width: map-get($breakpoint, lg)) {
                     margin:-2rem auto auto 2rem;
                 }
@@ -44,7 +45,7 @@
 
             .info-student{
                 margin-top: 4rem;
-                margin: 5rem auto;
+                margin: 5rem auto auto;
             }
 
             .img-student{
