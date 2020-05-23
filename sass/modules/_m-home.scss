@@ -111,7 +111,7 @@
 
 /*#SECTION SERVICES================== */
 .section-services{
-    height: 345vh; 
+    height: 340vh; 
 
     @media screen and (min-width: map-get($breakpoint, md)) {
         height: 90vh; 
@@ -176,7 +176,7 @@
 
 /*#SECTION STAT================== */
 .section-stat{
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
     width: 100%;
 
