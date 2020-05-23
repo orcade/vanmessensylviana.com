@@ -15,7 +15,7 @@
 
 
         .wrap{
-            height: 200vh;
+            height: 220vh;
             width: auto;
             
             
@@ -35,7 +35,7 @@
             
 
             .btn{ 
-                margin:1rem auto auto 2rem;
+                margin:-2rem auto auto 2rem;
 
                 @media screen and (min-width: map-get($breakpoint, lg)) {
                     margin:-2rem auto auto 2rem;

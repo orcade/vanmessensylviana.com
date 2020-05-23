@@ -778,7 +778,7 @@ footer .icone-social a {
 }
 /* line 17, ../sass/modules/_m-home.scss */
 .wrap-m-home .section-student .wrap {
-  height: 200vh;
+  height: 220vh;
   width: auto;
 }
 @media screen and (min-width: 720px) {
@@ -800,7 +800,7 @@ footer .icone-social a {
 }
 /* line 37, ../sass/modules/_m-home.scss */
 .wrap-m-home .section-student .wrap .btn {
-  margin: 1rem auto auto 2rem;
+  margin: -2rem auto auto 2rem;
 }
 @media screen and (min-width: 960px) {
   /* line 37, ../sass/modules/_m-home.scss */
