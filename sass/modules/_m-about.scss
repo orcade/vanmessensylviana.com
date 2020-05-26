@@ -8,7 +8,7 @@
     
 /*#SECTION BANNER================== */
     .section-banner{
-        height: 35vh;
+        height: auto;
         background-image: linear-gradient(to right, map-get($colors, bannerBg1), map-get($colors, bannerBg2));
         width: 100%;
         margin-top: -1rem;
@@ -68,11 +68,11 @@
     .section-about{
 
         .wrap{
-            height: 200vh;
+            height: auto;
             max-width: 1140px;
             
             @media screen and (min-width: map-get($breakpoint, md)) {
-                height: 120vh; 
+                
             }
             @media screen and (min-width: map-get($breakpoint, lg)) {
                 margin-left: auto;
@@ -129,7 +129,7 @@
 /*#SECTION PROGRESSBAR================== */
 .section-progressbar{
     max-width: 1140px;
-    height: 60vh; 
+    height: auto; 
     display: block;
     height: auto;
     margin-left: auto;
@@ -137,24 +137,24 @@
 
 
     @media screen and (min-width: map-get($breakpoint, md)) {
-        height: 70vh; 
+        
         padding-top: 4rem;
         
     }
     
     @media screen and (min-width: map-get($breakpoint, lg)) {
-        height:70vh;
+        
     
     }
 
         .wrap{
 
         @media screen and (min-width: map-get($breakpoint, lg)) {
-            height:60vh;
+            
         
         } 
         @media screen and (min-width: map-get($breakpoint, lg)) {
-            height:80vh;
+            
             
             display: block;
             max-width: 1140px;
@@ -232,14 +232,14 @@
     }
 
     .wrap{
-        height:160vh;
+        height:auto;
 
         
         @media screen and (min-width: map-get($breakpoint, md)) {
-            height:100vh;
+            
         }
         @media screen and (min-width: map-get($breakpoint, lg)) {
-            height:200vh;
+            
             max-width: 1140px;
 
             display: block;
@@ -324,9 +324,10 @@
 /*#SECTION SLIDE================== */
 .section-slide-about{
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
-    height: 18rem;
+    height: 12rem;
 
     .wrap{
+        max-width: 1140px;
         @media screen and (min-width: map-get($breakpoint, md)) {
             height: 30vh; 
             display: block;
@@ -339,17 +340,14 @@
         @media screen and (min-width: map-get($breakpoint, lg)) {
             
             height: 80vh;
-            
+
         }
 
         .slide-about{
             
-            border-top: solid 100px map-get($colors ,bg-sect1);
-
-            img{
-                margin: auto;
-            }
-
+            margin: auto;
+            padding-left: 2rem;
+            
 
             .smart{
                 display: block;
@@ -357,34 +355,49 @@
                 margin: auto;
                 padding-top: 3rem;
                 
+                
 
 
                 @media screen and (min-width: map-get($breakpoint, md)) {
-                    width: 5rem;
+                    width: 7rem;
                     display: inline-block;
+                }
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    width: 9rem;
+                    margin-left: -4rem;
+                    
+                    
                 }
             
             }
             .md-lg{
                 display: none;
                 
-                
                 @media screen and (min-width: map-get($breakpoint, md)) {
                     display: inline-block;
                     
-                    width: 5rem;
+                    width: 7rem;
                     margin-top:3rem ;
-                    margin-left:4rem ;
+                    margin-left:2rem ;
+                    
+                    margin-right: 0;
+                }
+                @media screen and (min-width: map-get($breakpoint, lg)) {
+                    width: 9rem;
+                    
+                    
                 }
             }
-            .home{
-                margin-left: 0rem;
-                margin-right: 4rem;
+            .md-lg.home{
+                margin-left: -4rem;
+                margin-right: 8rem;
             }
+                
+            }
+        
         }
 
         }
     }
 
 
-}

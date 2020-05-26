@@ -109,6 +109,13 @@ p{
 
 }
 
+section{
+    padding-bottom: 3rem;
+}
+
+.title-none{
+    display: none;
+}
 
 .btn{
     background-image: linear-gradient(to right, map-get($colors, btn1), map-get($colors, btn2));
@@ -122,6 +129,7 @@ p{
     width: 14rem;
     display: block;
     font-weight:bolder;
+    margin-top: 1rem;
 
         &:hover{
             box-shadow: 0 6px 10px 0 rgba(52,52,52,0.1);
