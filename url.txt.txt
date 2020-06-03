@@ -1,5 +1,5 @@
-URL minimir
+URL minimir:
 
 
-URL gitub
+URL gitub:
 https://orcade.github.io/vanmessensylviana.com/index.html
