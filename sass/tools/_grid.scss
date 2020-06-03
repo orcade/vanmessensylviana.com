@@ -1,0 +1,25 @@
+/* Grid system inspired by boostrap */
+
+@for $i from 1 through $columns {
+  .col-#{$i}{
+    flex: 0 0 ((100% / $columns) * $i);
+    max-width: (100% / $columns) * $i;
+  }
+}
+
+@each $key, $size in $breakpoint {
+  @media screen and (min-width: $size) {
+    .col-#{$key} {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+
+    @for $i from 1 through $columns {
+      .col-#{$key}-#{$i}{
+        flex: 0 0 ((100% / $columns) * $i);
+        max-width: (100% / $columns) * $i;
+      }
+    }
+  }
+}
