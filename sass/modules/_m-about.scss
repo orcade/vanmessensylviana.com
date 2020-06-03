@@ -346,7 +346,11 @@
         .slide-about{
             
             margin: auto;
-            padding-left: 2rem;
+            
+
+            @media screen and (min-width: map-get($breakpoint, md)) {
+                padding-left: 2rem;
+            }
             
 
             .smart{

@@ -471,7 +471,11 @@
         .slide-home{
             
             margin: auto;
-            padding-left: 6rem;
+            
+            @media screen and (min-width: map-get($breakpoint, md)) {
+                padding-left: 9rem;
+                margin-left: 2rem;
+            }
             
 
             .smart{

@@ -9,14 +9,14 @@ Voici les informations techniques que le graphiste lui a fournies.
 
 -• Police: Poppins, sans-serif
 -• Couleurs
-  ◦ Btn1: #8490ff
-  ◦ Btn2: #62bdfc
-  ◦ Couleur3: #fff
-  ◦ txt: #777777
-  ◦ title: #222222
-  ◦ link: #8490ff
-  ◦ bannerBg1: #8490ff
-  ◦ bannerBg2: #62bdfc
+  -◦ Btn1: #8490ff
+  -◦ Btn2: #62bdfc
+  -◦ Couleur3: #fff
+  -◦ txt: #777777
+ - ◦ title: #222222
+  -◦ link: #8490ff
+  -◦ bannerBg1: #8490ff
+  -◦ bannerBg2: #62bdfc
 
 Le client souhaite évidemment que son site soit disponible sur un maximum de navigateur et d’appareil
 différent. Le graphiste lui a envoyé le résultat final.
@@ -34,7 +34,6 @@ accéder.
 Last update : 29/03/2020 16:35:03 Page 1/1 Author: Ludovic Evrard
 
 
-http://minimir.isl.be/cedric.dujardin/TravailFinal/?fbclid=IwAR2JCCZFDzX_2x7pygsA8oQ2Aci0BudB9Uhy_qYfkgfI2YErYKIE3ezhbkw/BLOG
 
 @function get-contrast-color($color, $pourcent) {
     @if brightness($color) > 50 {
@@ -87,14 +86,10 @@ grid inspired https://chierchia.fr/blog/definir-une-grille-de-mise-en-page-avec-
     //contact 
 //grid
 //variable color size...
-breackpoint
-mixins
-functions
-mise en ligne test
-seo  
-optimisation
-test navigateur grid
-w3c validator
+//mixins
+//optimisation
+//test navigateur grid
+//w3c validator
 verif dossier
 
 breakpoint et mediaqueries:
@@ -134,36 +129,9 @@ css main:
 test navigateur css
 js 
 scroll
+favicon
 test
 mise en ligne final 
 test apres mise en ligne 
 
 
-@media screen and (min-width: map-get($break-point, lg)) {
-    a.hover{
-
-        &:hover:before {
-            display: block;
-            content: "";
-            width: 15px;
-            height: 15px;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            border-bottom: 3px solid map-get($colors , primaryGreen );
-            border-left: 3px solid map-get($colors , primaryGreen );
-        }
-
-        &:hover:after {
-            display: block;
-            content: "";
-            width: 15px;
-            height: 15px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            border-top: 3px solid map-get($colors , primaryGreen );;
-            border-right: 3px solid map-get($colors , primaryGreen );;
-        }
-
-    }

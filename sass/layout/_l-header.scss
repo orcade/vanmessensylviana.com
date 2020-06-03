@@ -17,6 +17,7 @@
 
 .wrap-l-header {
     
+
 @media screen and (min-width: map-get($breakpoint, lg)) {
     max-width: 1140px;
     display: block;
@@ -44,7 +45,7 @@
     right: 0;
     
     @include transform(rotate(0deg));
-    @include transition(.5s ease-in-out);
+    @include transition(.2s ease-in-out);
     cursor: pointer;
     position: fixed;
 
@@ -67,7 +68,7 @@
         left: 0;
         z-index: 999;
         @include transform(rotate(0deg));
-        @include transition(.25s ease-in-out);
+        @include transition(.2s ease-in-out);
 
         &:nth-child(1) {
             top: 0;
@@ -85,6 +86,8 @@
             
         }
     }
+
+
 
     &.is-open {
         position: relative;
@@ -119,8 +122,11 @@
             background: transparent;
         }
     }
-   
+
 }
+
+
+
 
 .l-menu-main {
     text-align: left;
@@ -129,6 +135,9 @@
     width: 100%;
     height: auto;
     display: none;
+
+    transition: 0.4s;
+    
     
 
     @include transition(.2s ease-in-out);
@@ -155,6 +164,7 @@
 
 }
 ul {
+    
     margin-top: -1rem;
     padding-top: 6rem;
     text-align: left;

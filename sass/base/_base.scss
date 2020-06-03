@@ -113,6 +113,21 @@ section{
     padding-bottom: 3rem;
 }
 
+input{
+    font-family: $primary-font;
+    color:  map-get($colors , txt );
+    font-size: 14px;
+
+}
+
+
+textarea{
+    font-family: inherit;
+    color:  map-get($colors , txt );
+    font-size: 14px;
+}
+
+
 .title-none{
     display: none;
 }
@@ -132,10 +147,20 @@ section{
     margin-top: 1rem;
 
         &:hover{
-            box-shadow: 0 6px 10px 0 rgba(52,52,52,0.1);
+            box-shadow: 0 6px 10px 0 rgba(12, 12, 12, 0.1);
         }
     
 }
 
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
 

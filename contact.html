@@ -20,7 +20,7 @@
 
             <!--LOGO-->
             <div class="logo-l-header">
-                <a href="index.html"><img class="logo-l-header" src="./img/logo.png" alt="isl-logo" title="logo-isl"></a>
+                <a href="index.html"><img class="logo-l-header" src="./img/logo2.png" alt="isl-logo" title="logo-isl"></a>
             </div>
 
             <!--HAMBURGER--> 
@@ -45,78 +45,98 @@
     <!--MODULE HOME m-contact-->
     <main class="m-contact">
         <div class="wrap-m-contact">
-        
-            <section class="banner-contact">
+            
+            <!-- SECTION  BANNER-->
+            <section class="section-banner">
+                <h1 class="banner">Contact Us</h1>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a><span class="fas fa-arrow-right"></span>Contact Us</li>
+                        <li><a href="index.html" >Home</a></li>
+                        <li class="is-active"><span class="lnr lnr-arrow-right"></span>Contact Us</li>
                     </ul>
                 </nav>
             </section>
 
-        <div class="wrap">
-            <section class="sec-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.1416721223586!2d5.558294815852104!3d50.64305997950236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa164d342d39%3A0xa33e2d934b144ff1!2sInstitut%20Saint-Laurent%20de%20Promotion%20Sociale!5e0!3m2!1sfr!2sbe!4v1587488649747!5m2!1sfr!2sbe" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <!-- SECTION  MAP -->
+            <section class="section-map-contact">
+                <div class="wrap">
+                    <h1 class="title-none">ISL</h1>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10120.56646870339!2d5.560471000000001!3d50.643061!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1590786981984!5m2!1sfr!2sbe"></iframe>
+                </div>         
             </section>
-            <section class="sec-contact">
-                <div class="row">
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="boxing">
-                            <div class="contact-info">
-                                <div class="contact-lnr">
-                                    <span class="lnr lnr-home"></span>
+
+            <!-- SECTION  INFOS-CONTACT -->
+            <section class="section-infos-contact">
+                <div class="wrap">
+                    <h1 class="title-none">ISL</h1>
+
+                    <div class="content-infos">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-4">
+
+                                <div class="infos-contact">
+                                    <div class="lnr">
+                                        <span class="lnr-home"></span>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="title">Binghamton, New York</p>
+                                        <p class="txt">4343 Hinkle Deegan Lake Road</p>
+                                    </div>
+                                
+                                    <div class="lnr">
+                                        <span class="lnr-phone-handset"></span>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="title">00 (958) 9865 562</p>
+                                        <p class="txt">Mon to Fri 9am to 6 pm</p>
+                                    </div>
+                                
+                                    <div class="lnr">
+                                        <span class="lnr-envelope"></span>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="title">support@colorlib.com</p>
+                                        <p class="txt">Send us your query anytime!</p>
+                                    </div>
+
                                 </div>
-                                <div class="info-contact">
-                                    <p>Binghamton, New York</p>
-                                    <p>4343 Hinkle Deegan Lake Road</p>
-                                </div>
+                            </div> 
+                        
+                            <div class="col-12 col-md-8 col-lg-8">
+                                <form action="./page.php" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="infos-input">
+                                                <input class="form" placeholder="Enter your name" type="text" id="name" name="name" /><br>
+                                                <input class="form" placeholder="Enter email address" type="text" id="email"  name="email"/><br>    
+                                                <input class="form" placeholder="Enter subject" type="text" id="subject" name="subject" />
+                                            </div>
+                                        </div>
+
+                                    
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="infos-textarea">
+                                                <textarea class="form-txt" placeholder="Enter Message" id="message"  name="message"></textarea>
+                                                <a href="#" class=" btn-contact btn "  id="send-message">send message</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </form>
                             </div>
-                            <div class="contact-info">
-                                <div class="contact-lnr">
-                                    <span class="lnr lnr-phone-handset"></span>
-                                </div>
-                                <div class="info-contact">
-                                    <p>00 (958) 9865 562</p>
-                                    <p>Mon to Fri 9am to 6 pm</p>
-                                </div>
-                            </div>   
-                            <div class="contact-info">
-                                <div class="contact-lnr">
-                                    <span class="lnr lnr-envelope"></span>
-                                </div>
-                                <div class="info-contact">
-                                    <p>support@colorlib.com</p>
-                                    <p>Send us your query anytime!</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-8">
-                        <form action="./page.php" method="post"> 
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-6">
-                                    <div class="contact-box">
-                                        <input placeholder="Enter your name" type="text" id="name" name="name" />
-                                        <input placeholder="Enter email adress" type="text" id="email"  name="email"/>    
-                                        <input placeholder="Enter subject" type="text" id="subject" name="subject" />
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-6">
-                                    <div class="contact-box">
-                                        <textarea placeholder="Enter Message" id="message"  name="message"></textarea>
-                                    </div>
-                                    <div class="btn-box">
-                                        <button class="btn-1" type="submit" id="sendMess">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>   
-                        </form>
-                    </div>
+
                 </div>
             </section>
+
+        
         </div>
     </main>
 
+    <!--FOOTER-->
     <footer  class="l-footer">
         <div class="wrap-l-footer">
             <div class="row">
@@ -130,29 +150,30 @@
                     <br>
                     <div class="copyright">
                         <div class="copyright">
-                            <p>Copyright ©2020, All rights reserved | This template is made with <span class="lnr lnr-heart">by</span>
-                                <a href="https://colorlib.com/">Colorlib</a>
+                            <p>Copyright ©2020, All rights reserved | This template is made with <span class="lnr lnr-heart"></span>
+                                by <a href="https://colorlib.com/">Colorlib</a>
                             </p> 
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-4">
-                    <p class="title">Newsletter</p>
-                    <p>Stay updated with our latest trends.
+                    <p class="news title">Newsletter</p>
+                    <p class="news">Stay updated with our latest trends.
                     </p>
                     <form>
                         <div class="email">
-                            <input class="l-footer-email"  autocomplete="off" placeholder="Enter Email adress" onclick="this.value=''" type="email" id="email"  name="email"/>  
-                            <button class="footer-btn lnr lnr-arrow-right" type="submit"></button>
+                            <input class="l-footer-email"  autocomplete="off" placeholder="Enter Email adress" type="email" id="email-user"  name="email"/>  
+                            <button class="footer-btn lnr lnr-arrow-right" type="submit" id="footer-btn"></button>
                         </div>
                     </form>      
                 </div>
 
                 <div class="col-12 col-md-3 col-lg-3">
-                    <p class="title">Follow Me</p>
-                    <p>Let us be social.</p>
-                    <div class="icone-social">
+                    <p class="title follow">Follow Me</p>
+                    <p class=" follow">Let us be social.</p>
+
+                    <div class="icone-social ">
                         <a href=" #" class="fab fa-facebook-f"></a>
                         <a href=" #" class="fab fa-twitter"></a>
                         <a href=" #" class="fab fa-dribbble"></a>
