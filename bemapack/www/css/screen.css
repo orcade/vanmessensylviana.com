@@ -1,0 +1,515 @@
+/* 
+    Created on : 20-12-2019, 20:01:31
+    Author     : Sylviana Vanmessen
+*/
+/* Make css mobile first */
+/* Reset for better compatibility */
+/* line 1, ../sass/base/_reset.scss */
+html, body, div, span, h1, h2, p, a, strong, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, table,
+tbody, tfoot, thead, tr, th, td, footer, header, menu, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 12, ../sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* Base */
+/* mobile first css */
+/* line 4, ../sass/base/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/base/_base.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 15, ../sass/base/_base.scss */
+body {
+  background-color: white;
+  margin: 0rem;
+  padding: 0rem;
+  width: auto;
+  font-size: 20px;
+}
+
+/* line 23, ../sass/base/_base.scss */
+main {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* line 38, ../sass/base/_base.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 43, ../sass/base/_base.scss */
+p {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+/* Grid inspired by boostrap */
+/* line 3, ../sass/tools/_grid.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 8, ../sass/tools/_grid.scss */
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+/* line 15, ../sass/tools/_grid.scss */
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 740px) {
+  /* line 23, ../sass/tools/_grid.scss */
+  .col-md {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1124px) {
+  /* line 23, ../sass/tools/_grid.scss */
+  .col-lg {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 30, ../sass/tools/_grid.scss */
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* layout */
+/********************HEADER********************/
+/*modules*/
+/* line 2, ../sass/modules/_m-contact.scss */
+#message-confirmation {
+  color: #e20d75;
+  margin-top: 2rem;
+}
+
+/* line 8, ../sass/modules/_m-contact.scss */
+p.message {
+  line-height: 1.7rem;
+  color: black;
+  margin-bottom: 5rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+/* line 19, ../sass/modules/_m-contact.scss */
+p.message input.checkbox {
+  text-align: justify;
+  margin-right: 1rem;
+}
+
+/* line 27, ../sass/modules/_m-contact.scss */
+.formulaire {
+  width: 93%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-right: 0;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 2rem auto 4rem auto;
+  position: relative;
+}
+/* line 38, ../sass/modules/_m-contact.scss */
+.formulaire input[type=text], .formulaire input[type=tel], .formulaire input[type=email] {
+  display: inline-block;
+  border: o;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 1rem;
+  color: black;
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 5px;
+}
+/* line 53, ../sass/modules/_m-contact.scss */
+.formulaire input[placeholder=""] {
+  background-color: antiquewhite;
+}
+/* line 58, ../sass/modules/_m-contact.scss */
+.formulaire textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  padding: 12px;
+  border-radius: 8px;
+  resize: vertical, horizontal;
+}
+/* line 68, ../sass/modules/_m-contact.scss */
+.formulaire #message-confirmation {
+  font-size: 1rem;
+  color: #e20d75;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 740px) {
+  /* line 82, ../sass/modules/_m-contact.scss */
+  .formulaire {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3rem 1rem 1rem 1rem;
+    margin: 18rem 0rem 2rem 0rem;
+    position: relative;
+  }
+  /* line 93, ../sass/modules/_m-contact.scss */
+  .formulaire input[type=text], .formulaire input[type=tel], .formulaire input[type=email] {
+    display: inline-block;
+    border: o;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  /* line 107, ../sass/modules/_m-contact.scss */
+  .formulaire input[placeholder=""] {
+    background-color: antiquewhite;
+  }
+  /* line 110, ../sass/modules/_m-contact.scss */
+  .formulaire textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    padding: 12px;
+    border-radius: 8px;
+    resize: vertical, horizontal;
+  }
+
+  /* line 124, ../sass/modules/_m-contact.scss */
+  #message-confirmation {
+    color: #e20d75;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /* line 133, ../sass/modules/_m-contact.scss */
+  #name {
+    width: 97%;
+  }
+
+  /* line 136, ../sass/modules/_m-contact.scss */
+  #phone {
+    width: 97%;
+  }
+}
+@media screen and (min-width: 1124px) {
+  /* line 146, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact {
+    height: auto;
+    display: block;
+    width: 1100px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8rem;
+    margin-bottom: 0;
+    border-radius: 7px;
+    position: relative;
+  }
+  /* line 162, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact p.message {
+    text-align: center;
+    margin: 1rem 0 4rem 0;
+  }
+  /* line 168, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact .formulaire {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3rem 0rem 1rem 0rem;
+    margin: 2rem 1rem 2rem 1rem;
+    position: relative;
+  }
+  /* line 179, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact .formulaire input[type=text], .wrap-page-contact .formulaire input[type=tel], .wrap-page-contact .formulaire input[type=email] {
+    display: inline-block;
+    border: o;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  /* line 193, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact .formulaire input[placeholder=""] {
+    background-color: antiquewhite;
+  }
+  /* line 197, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact .formulaire textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    padding: 12px;
+    border-radius: 8px;
+    resize: vertical, horizontal;
+  }
+  /* line 210, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact #message-confirmation {
+    color: #e20d75;
+    margin-top: 2rem;
+    z-index: 999;
+    text-align: center;
+  }
+  /* line 220, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact #name {
+    width: 97%;
+  }
+  /* line 223, ../sass/modules/_m-contact.scss */
+  .wrap-page-contact #phone {
+    width: 97%;
+  }
+}

@@ -1,0 +1,24 @@
+
+$break-point: (
+    md:  740px,
+    lg:  1124px,
+);
+
+$grid-columns: 12 !default;
+
+$primary-font: "Arial";
+
+$default-font-size: 20px;
+
+$colors: (
+    main:       white,
+    second:     #002e3b,
+    primary:    #028a48,
+    txtprimary: #002332,
+    sidebar:    #002e3b,
+    txtsecond:  white,
+    white:      white,
+    link:       #e20d75,
+    black:      #000,
+    hover:      #e20d75,
+);

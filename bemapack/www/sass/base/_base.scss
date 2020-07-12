@@ -1,0 +1,46 @@
+
+/* mobile first css */
+
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    background-color: white;
+    margin: 0rem;
+    padding: 0rem;
+    width: auto; 
+    font-size: 20px;
+}
+
+main{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+h1 {
+
+}
+
+
+a {
+    
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p{
+    font-size:  20px;
+    line-height: 2rem;
+}
