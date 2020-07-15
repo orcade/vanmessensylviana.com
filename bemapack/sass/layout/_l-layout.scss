@@ -1,5 +1,4 @@
 /********************HEADER********************/
-/********************HEADER********************/
 .l-header {
     position: fixed;
     top: 0;
@@ -24,7 +23,7 @@
         justify-content: space-between;
         padding: 0;
     }
-
+    
     #menu-up{
         display: none;
         @media screen and (min-width: map-get($break-point, lg)) {
