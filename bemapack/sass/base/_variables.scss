@@ -4,21 +4,20 @@ $break-point: (
     lg:  1124px,
 );
 
-$grid-columns: 12 !default;
+$fonts: (
+    
+    primary-font: "Segoe UI",
+    secondary-font: "Quicksand"
 
-$primary-font: "Arial";
+);
 
 $default-font-size: 20px;
 
 $colors: (
-    main:       white,
-    second:     #002e3b,
-    primary:    #028a48,
-    txtprimary: #002332,
-    sidebar:    #002e3b,
-    txtsecond:  white,
-    white:      white,
-    link:       #e20d75,
-    black:      #000,
-    hover:      #e20d75,
+    main:             white,
+    primary:          #033752,
+    primaryGreen:     #4eb748,
+    second:           #04486a,
+    secondary-middle: #077cb7,
+    secondary-light:  #2999d1,
 );

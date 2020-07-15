@@ -9,12 +9,12 @@
     background-color: map-get($colors,primary);
     z-index: 999;
     
-
-    @media screen and (min-width: map-get($break-point, lg)) {
+    @media screen and (min-width: map-get($break-point, md)) {
         height: auto;
         width: 5rem;
         background-color:transparent;
         position: absolute;
+        
     }
     
     > div {
@@ -26,36 +26,50 @@
     
     #menu-up{
         display: none;
-        @media screen and (min-width: map-get($break-point, lg)) {
+
+        @media screen and (min-width: map-get($break-point, md)) {
         width: 100%;
-        height: 5rem;
-        background: map-get($colors , secondary);
+        height: 6rem;
+        background: map-get($colors , primary);
         background: rgb(3,55,82);
         background: linear-gradient(270deg, rgba(3,55,82,1) 0%, rgba(4,72,106,0.9387955011106005) 35%); 
         display: block;
         position: fixed;
-        margin-top: -6rem;
+        margin-top: -7rem;
+        
         }
     
         
     }
-    .l-logo-lg{
+    .l-logo__mobile{
         display:block;
         width: 2.5rem;
         margin:1rem ;
         
 
-        @media screen and (min-width: map-get($break-point, lg)) {
+        @media screen and (min-width: map-get($break-point, md)) {
             display: inline-block;
             margin: 1rem;
             width: 2.5rem;
+            position: relative;
+            
         }
     }
+
+    .l-logo__lg{
+        display: none;
+        @media screen and (min-width: map-get($break-point, lg)) {
+            display: inline-block;
+        }
+    }
+    
+
+
     #menu-hamburger {
         z-index: 999;
         width: 2rem;
         height: 2rem;
-        margin: -2.5rem 1rem 1rem 1rem;
+        margin: -3rem 1rem 1rem 1rem;
         right: 0;
         
         @include transform(rotate(0deg));
@@ -92,10 +106,11 @@
     
         &.is-open {
             position: relative;
-            z-index: 999;
+            z-index: 9999;
             display: block;
             float: right;
-            @media screen and (min-width: map-get($break-point, lg)) {
+
+            @media screen and (min-width: map-get($break-point, md)) {
                 display: none;
             }
     
@@ -128,15 +143,14 @@
             }
         }
     
-        @media screen and (min-width: map-get($break-point, lg)) {
+        @media screen and (min-width: map-get($break-point, md)) {
             display: none;
         }
     }
 
-.l-nav-main {
+.l-nav__main {
     text-align: right;
     z-index: 999;
-    
     width: 100%;
     height: 100vh;
     display: none;
@@ -151,7 +165,7 @@
         right: -100rem;
 
     }
-    @media screen and (min-width: map-get($break-point, lg)) {
+    @media screen and (min-width: map-get($break-point, md)) {
         background: none;
         width: auto;
         height: auto;
@@ -163,40 +177,33 @@
     }
 
     nav{
-        text-align: center;
+        
         margin-left: auto;
         margin-right: auto;
-
-
-        
     }
 
     ul {
-        margin-top: -1rem;
-        padding-top: 4rem;
+        margin-top: -2rem;
+        padding-top: 1rem;
         
         text-align: center;
+    
 
         @media screen and (min-width: map-get($break-point, md)) {
             z-index: 999;
-            padding: 1rem 1.2rem 1rem 2rem;
             width: 100%;
+
             text-align: right;
             position: fixed;
-            margin-top: -5rem;
+            margin: -4.5rem auto auto -6rem;
             display: inline-block;
-            margin-left: -4rem;
+            font-size: 18px;
+            
         }
         
         @media screen and (min-width: map-get($break-point, lg)) {
-            z-index: 999;
-            padding: 1rem 1.2rem 1rem 2rem;
-            width: 100%;
-            text-align: right;
-            position: fixed;
-            margin-top: -5rem;
-            display: inline-block;
-            margin-left: -8.5rem;
+            margin: -5rem auto auto -5rem;
+            
         }
     }
     
@@ -206,9 +213,10 @@
         margin-top: 3rem;
 
     
-        @media screen and (min-width: map-get($break-point, lg)) {
+        @media screen and (min-width: map-get($break-point, md)) {
             display: inline-block;
-            margin:auto 0.8rem auto 2.5rem;
+            margin:auto 0rem auto 1.5rem;
+            
             &:hover {
                 transform: scale(.9); 
             
@@ -227,10 +235,11 @@
         
 
 
-        @media screen and (min-width: map-get($break-point, lg)) {
+        @media screen and (min-width: map-get($break-point, md)) {
             color: map-get($colors, main);
             padding: 0.2rem 0.5rem;
             margin:auto 1rem auto 1rem;
+
 
         &:hover, &.is-active {
             right: 0;
@@ -245,7 +254,7 @@
 
 }
 }
-@media screen and (min-width: map-get($break-point, lg)) {
+@media screen and (min-width: map-get($break-point, md)) {
     a.hover{
 
         &:hover:before {

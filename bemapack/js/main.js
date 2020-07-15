@@ -3,8 +3,6 @@
 var menuHamDom;
 var menuMainDom;
 
-var emailApi;
-
 menuHamDom = document.getElementById('menu-hamburger');
 menuMainDom = document.getElementById('menu-principale');
 
@@ -26,23 +24,16 @@ if (menuHamDom != null) {
 
 // Initial visibility set to "none"
 
- 
+
 const arrowUp = document.getElementById("menu-up");
- 
 arrowUp.style.display = "none";
- 
- 
- 
+
 // Visibility  "background" when scrolling
- 
 window.addEventListener("scroll", function(){
- 
 	if(window.pageYOffset >  10){
- 
 		arrowUp.style.display = "block";
 	}
 	else{
- 
 		arrowUp.style.display = "none";
 	}
 }, false);

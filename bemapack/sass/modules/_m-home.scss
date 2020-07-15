@@ -1,0 +1,66 @@
+/********************BANNER********************/
+.wrap__banner{
+    height: auto;
+    background-color:map-get($colors , primary ) ;
+
+    @media screen and (min-width: map-get($break-point, md)) {
+        background-color:white;
+    }
+
+    .bg__banner{
+        display: none;
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            display: block;
+            width: 100%;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            display: block;
+            width: 88%;
+        }
+    }
+    .header__lg{
+        display: none;
+    }
+    .header__mobile{
+        margin-top: 3rem;
+        z-index: 0;
+        height: auto;
+        @media screen and (min-width: map-get($break-point, md)) {
+            display:none;
+            
+        }
+    }
+    .point__banner{
+        display: none;
+    }
+    .txt__presentation{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 70%;
+        margin: -6rem auto auto 2rem;
+    }
+    .btn__banner{
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+
+        margin-top: 1rem auto auto auto;
+    }
+    
+    .crl--blue{
+        display: none;
+    }
+    .txt--liner{
+        color: white;
+        text-align: center;
+        
+        margin: 2rem 2rem 2rem 2rem;
+        padding-bottom: 2rem;
+
+        
+    }
+    
+    
+}
