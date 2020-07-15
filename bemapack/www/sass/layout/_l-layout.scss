@@ -245,8 +245,6 @@
 
 }
 }
-
-}
 @media screen and (min-width: map-get($break-point, lg)) {
     a.hover{
 
@@ -274,4 +272,7 @@
             border-right: 3px solid map-get($colors , primaryGreen );;
         }
     }
+    
 }
+}
+
