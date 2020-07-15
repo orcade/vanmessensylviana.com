@@ -204,6 +204,7 @@
         @media screen and (min-width: map-get($break-point, lg)) {
             margin: -5rem auto auto -5rem;
             
+            
         }
     }
     
@@ -215,7 +216,7 @@
     
         @media screen and (min-width: map-get($break-point, md)) {
             display: inline-block;
-            margin:auto 0rem auto 1.5rem;
+            margin:auto 0rem auto 2rem;
             
             &:hover {
                 transform: scale(.9); 
