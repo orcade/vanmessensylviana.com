@@ -183,9 +183,9 @@
     }
 
     ul {
-        margin-top: -2rem;
+        margin-top: 0rem;
         padding-top: 1rem;
-        
+        width: 100%;
         text-align: center;
     
 
@@ -202,9 +202,7 @@
         }
         
         @media screen and (min-width: map-get($break-point, lg)) {
-            margin: -5rem auto auto -8rem;
-            
-            
+            margin: -5rem auto auto -5rem;
         }
     }
     
@@ -216,7 +214,7 @@
     
         @media screen and (min-width: map-get($break-point, md)) {
             display: inline-block;
-            margin:auto 0rem auto 1.5rem;
+            margin:auto 0rem auto 2rem;
             
             &:hover {
                 transform: scale(.9); 
@@ -286,3 +284,236 @@
 }
 }
 
+/********************FOOTER********************/
+footer{
+    background: map-get($colors ,primary );
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    position: absolute;
+    margin-top: 1rem;
+
+    .bordure {
+        border-bottom:1px solid white;
+        margin-top: 7rem;
+        z-index: 999;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+        display: none;
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            margin-top: 4rem;
+            display: block;
+            width: 95%;
+            margin-left: 0rem;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            display: block;
+        }
+        }
+    
+    .icon{
+        width: 1rem;
+        margin-right: 1rem;
+    }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        margin-bottom: 0.5rem;
+        margin-left: -1rem;
+        width: 100%;
+
+        a{
+            text-decoration: none;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        color: map-get($colors,main);
+        font-size: 16px;
+        width: 100%;
+
+            &:hover{
+                color: map-get($colors , primaryGreen );
+            }
+        }
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            font-size: 16px;
+            padding-top: 2rem;
+            width: auto;
+            text-align: center;
+            margin-top: 0rem;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            font-size: 18px;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem;
+            width: auto;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    .logo-footer{
+        width: 15rem;
+        padding-top: -2rem;
+        @media screen and (min-width: map-get($break-point, md)) {
+            width: 12rem;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            padding-top: 1.5rem;
+        }
+    }
+
+
+    .icon--heart{
+        width: 1rem;
+    }
+
+    .section__footer--left{
+        margin-left: 1rem;
+
+        h1{
+            margin: 2rem auto 2rem -1rem;
+            font-size: 24px;
+        }
+        
+        @media screen and (min-width: map-get($break-point, md)) {
+            margin-left: 1rem;
+            margin-top: -4rem;
+            font-size: 20px;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin-left: 2rem;
+            margin-top: -7rem; 
+        }
+        
+
+        a{
+            color: map-get($colors ,main );
+            margin-top: -1rem;
+            text-decoration-line: none;
+            margin-left: -1rem;
+            font-size: 18px;
+            
+            
+            @media screen and (min-width: map-get($break-point, md)) {
+                font-size: 18px;
+                margin-left: -1rem;
+            }
+            @media screen and (min-width: map-get($break-point, lg)) {
+            
+            margin-left: 4rem;
+            font-size:20px;
+            
+            }
+            
+            &:hover{
+                color: map-get($colors , primaryGreen );
+            }
+        
+        }
+    }
+
+    .section__footer--middle{
+        margin-left: -2rem;
+        
+        @media screen and (min-width: map-get($break-point, md)) {
+            margin-left: -7rem;
+            margin-top: -4rem;
+            font-size: 18px;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin-left: -3rem;
+        }
+
+        ul{
+            margin-top: 0.5rem;
+        }
+        li{
+            color: map-get($colors ,main );
+            text-decoration: none;
+            text-decoration-line: none;
+            margin-left: 2rem;
+            font-size: 16px;
+            height: 3rem;
+            width: auto;
+
+            
+            @media screen and (min-width: map-get($break-point, md)) {
+                font-size: 16px;
+                margin-left: 5rem;
+                line-height: 2rem;
+
+                
+                width: auto;
+            }
+            @media screen and (min-width: map-get($break-point, lg)) {
+                color: map-get($colors ,main );
+                text-decoration: none;
+                text-decoration-line: none;
+                margin-left: 4rem;
+                font-size: 18px;
+                height: 3rem;
+                width: auto;
+                
+            }
+            
+            .open{
+                
+                
+            }
+        }
+    }
+
+    .section__footer--right{
+        margin-left: -2rem;
+        @media screen and (min-width: map-get($break-point, md)) {
+            margin-left: -5rem;
+            margin-top: -4rem;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin-left: 1rem;
+        }
+        
+        
+        p{
+            color: map-get($colors ,main );
+            text-decoration: none;
+            text-decoration-line: none;
+            margin-left: 2rem;
+            font-size: 18px;
+            height: 2.5rem;
+            width: auto;
+
+            @media screen and (min-width: map-get($break-point, md)) {
+                font-size: 18px;
+                color: map-get($colors ,main );
+                text-decoration: none;
+                text-decoration-line: none;
+                margin-left: 4rem;
+                font-size: 16px;
+                height: 2.5rem;
+                width: auto;
+            
+            }
+            @media screen and (min-width: map-get($break-point, lg)) {
+                margin-left: 0rem;
+                font-size: 20px;
+                height: 2.5rem;
+                width: auto;
+                
+            }
+            
+            
+        }
+    }
+    .btn-footer{
+        float: left;
+        margin: 3rem auto 3rem 1rem;
+        
+    }
+}
