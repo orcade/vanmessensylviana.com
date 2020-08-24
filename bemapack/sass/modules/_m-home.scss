@@ -12,6 +12,7 @@
 
         @media screen and (min-width: map-get($break-point, md)) {
             display: block;
+            position: relative;
             width: 100%;
         }
         @media screen and (min-width: map-get($break-point, lg)) {
@@ -21,6 +22,29 @@
     }
     .header__lg{
         display: none;
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            margin: -33rem auto auto 27rem;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            z-index:998;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+        
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin: -44rem auto auto 40rem;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            z-index:998;
+            width: 50%;
+            height: auto;
+            position: absolute;
+        }
+        
     }
     .header__mobile{
         margin-top: 3rem;
@@ -28,52 +52,144 @@
         height: auto;
         @media screen and (min-width: map-get($break-point, md)) {
             display:none;
-            
         }
     }
+    .l-logo__sm{
+        margin-top:-4rem;
+        display:block;
+        position: absolute;
+        width: 50%;
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            display:none;
+        }
+    }
+
     .l-logo__lg{
-        margin-top: -8rem;
-        display: none;
+        margin-top: auto;
+        display:block;
+        position: absolute;
+        width: 50%;
 
         @media screen and (min-width: map-get($break-point, md)) {
             display:block;
-            
+            position: absolute;
+            width: 30%;
+            margin: -32rem auto auto 8rem;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin: -44rem auto auto 8rem;
         }
     }
     .point__banner{
         display: none;
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            display:block;
+            position: absolute;
+            width: 20%;
+            margin: -15rem auto auto 14rem;
+        }
+
+        @media screen and (min-width: map-get($break-point, lg)) {
+            width: 20%;
+            margin: -17rem auto auto 14rem;
+        }
     }
     .txt__presentation{
         display: flex;
         flex-wrap: wrap-reverse;
+        
         width: 70%;
-        margin: -6rem auto auto 2rem;
+        margin: -4rem auto auto 0rem;
+
+        @media screen and (min-width: map-get($break-point, md)) {
+            display:block;
+            position: absolute;
+            width: 120%;
+            margin: 1rem auto auto auto;
+            text-align: right;
+        }
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin: -4rem auto auto auto;
+            text-align: right;
+        }
         
     }
-    .btn__banner{
-        display: flex;
-        justify-content: center;
-        z-index: 1;
-        position: relative;
 
-        margin-top: 1rem auto auto auto;
-    }
-    
     .crl--blue{
         display: none;
-    }
-    .txt--liner{
-        color: white;
-        text-align: center;
-        
-        margin: 2rem 2rem 2rem 2rem;
-        padding-bottom: 2rem;
+        @media screen and (min-width: map-get($break-point, md)) {
+            display: flex;
+            position: relative;
+            justify-content: left;
+            margin: -12rem auto auto 8rem;
+            color: white;
+            text-align: center;
 
+                ::before  {
+                    content: ">";
+                    color:map-get($colors , primaryGreen );
+                }
+        }
+
+        @media screen and (min-width: map-get($break-point, lg)) {
+            margin: -12rem auto auto 10rem;
+        }
+    }
+
+        .btn__banner{
+        
+    
+            @media screen and (min-width: map-get($break-point, md)) {
+
+                margin:0;
+                margin-right: 5rem;
+                padding:auto 2rem auto 1rem;
+                width: auto;
+            }
+            @media screen and (min-width: map-get($break-point, lg)) {
+                padding:auto 2rem auto 1rem;
+                width: 15rem;
+            }
+            
+        }
+        .txt--liner{
+            color: white;
+            text-align: center;
+            line-height:2rem;
+            
+            margin: 2rem 2rem 2rem 2rem;
+            padding-bottom: 2rem;
+            span{
+                border-bottom:  solid 2px #2999d1;
+            }
+    
+            @media screen and (min-width: map-get($break-point, md)) {
+                display:block;
+                position: absolute;
+                width: 20%;
+                margin: -28rem auto auto 8rem;
+                text-align: left;
+                font-size: 17px;
+            
+                span{
+                    border-bottom:  solid 2px #2999d1;
+                }
+                p{
+                    margin-left: -3rem;
+                }
+            
+            }
+    
+            @media screen and (min-width: map-get($break-point, lg)) {
+                margin: -33rem auto auto 8rem;
+            
+            }   
+        }
+        
         
     }
-    
-    
-}
 
 /********************wrap page home********************/
 .wrap{
@@ -87,10 +203,13 @@ height: auto;
     min-height: auto;
     margin-left: 1rem;
     margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
     
     
     @media screen and (min-width: map-get($break-point, md)) {
         height: auto;
+        margin-top: 10rem;
 
     }
 
@@ -102,7 +221,7 @@ height: auto;
         
     }
     
-    .title__primary p{
+    .title__primary {
         font-style: italic;
         margin:3rem auto 1rem auto;
         text-align: left;
@@ -119,7 +238,7 @@ height: auto;
         }
 
     @media screen and (min-width: map-get($break-point, md)) {
-        margin:1rem auto 2rem auto;
+        margin:1rem auto -4rem auto;
         font-size: 30px;
     }
     @media screen and (min-width: map-get($break-point, lg)) {
@@ -131,11 +250,11 @@ height: auto;
     }
 
 }
-.crl--green{
+.crl--green {
 
     font-style: normal;
     width: 100%;
-    display: block;
+    
     margin:auto auto auto auto;
     text-align: left;
     color: map-get($colors , primary);
@@ -158,11 +277,13 @@ height: auto;
         
     }
     @media screen and (min-width: map-get($break-point, lg)) {
-        margin:8rem auto auto 5rem;
+        margin:2rem auto 2rem 5rem;
         font-size: 24px;
         text-align: left;
         width:30rem;
         line-height: 2rem;
+        
+        
     }
 
 }
@@ -194,39 +315,62 @@ height: auto;
         
         line-height: 2rem;
     }
+
+
 }
 
+
     .cadre__detail{
-        
+
         .img__detail--mobile{
-            display: block;
+
             justify-content: center;
             width: 90%;
             margin:2rem auto auto auto;
             height: auto;
-            
+
     
             @media screen and (min-width: map-get($break-point, md)) {
-            
+            display: none;
             }
     
             @media screen and (min-width: map-get($break-point, lg)) {
+                display: none;
+                
             }
     
         }
-    }
-    .btn__detail{
-        justify-content: center;
+        .img__detail--lg{
+
+            display: none;
+    
+            @media screen and (min-width: map-get($break-point, md)) {
+            display: none;
+            }
+    
+            @media screen and (min-width: map-get($break-point, lg)) {
+                display: block;
+                width: 75%;
+                float: right;
+                margin-top: 6rem;
+            }
+    
+        }
+
+}
+    .btn--detail{
+       margin:4rem auto auto 18rem;
     }
 
 }
-
 /********************section logo********************/
 
 .section__logo{
     min-height: auto;
-    width: 100%;
-    margin-top: 0rem; 
+    width: 90%;
+    margin: auto; 
+    padding-bottom:2rem ;
+
 
         @media screen and (min-width: map-get($break-point, md)) {
             height: auto;
@@ -285,7 +429,7 @@ height: auto;
     }
 
     .cadre__logo img{
-        width: 100%;
+        width: 90%;
         margin: 1rem;
         @media screen and (min-width: map-get($break-point, md)) {
             margin:10rem auto auto auto;
@@ -350,414 +494,264 @@ height: auto;
 }
 
 /********************section creations********************/
-.wrap-creation{
-    min-height: auto;
-    position: relative;
+.section__creation{
+    height: auto;
     width: 100%;
-    margin-top: 50rem;
+    margin-top: 2rem;
 
-    @media screen and (min-width: map-get($break-point, tn)) {
-        margin-top: 50rem; 
-        
-    }
-    
     @media screen and (min-width: map-get($break-point, md)) {
         height: auto;
-        margin-top: 19rem;
+        
     }
     @media screen and (min-width: map-get($break-point, lg)) {
         height: auto;
-        margin-top: 15rem;
-    }
-    @media screen and (min-width: map-get($break-point, xlg)) {
-        height: auto;
-        margin-top: 11rem;
-        width: 94%;
-        margin-left: 1rem;
         
     }
 
-
-    .cadre-creation{
-    
-        display:none;
-    
-
-        @media screen and (min-width: map-get($break-point, md)) {
-            
-            display: none;
-            
-        }
-        @media screen and (min-width: map-get($break-point, lg)) {
-            margin:0rem 0 auto auto;
-            display: block;
-            width: 90%;
-            height: 40rem;
-            
-
-        }
-
-    }
-
-    .cadre-creation-mobile{
-        display: block;
-        width:100%;
-        height: 60rem;
-        margin:-4rem auto 4rem auto;
-
-        @media screen and (min-width: map-get($break-point, tn)) {
+    .cadres{
+        .cadre__creation{
+            display:none;
         
-            
-        }
-
-        @media screen and (min-width: map-get($break-point, sm)) {
-        
-            
-        }
-        @media screen and (min-width: map-get($break-point, md-x)) {
-            margin:auto auto auto auto;
-            display: block; 
-            width:100%;
-            height: 65rem;
-            
-        }
-
-        @media screen and (min-width: map-get($break-point, md)) {
-            margin:auto auto auto auto;
-            display: block; 
-            width:100%;
-            height: 40rem;
-            
-        }
-        @media screen and (min-width: map-get($break-point, lg)) {
-            margin:0rem auto auto auto;
-            display: none;
-        }
-
-    }
-
-    .photo-creation{
-        display: none;
-        
-
-        @media screen and (min-width: map-get($break-point, md)) {
-            display: none;
-            
-        }
-        @media screen and (min-width: map-get($break-point, lg)) {
-            display: block;
-            margin: -37rem auto auto 1rem;
-            position: relative;
-            width: 26rem;
-            height: auto;
-        }
-        @media screen and (min-width: map-get($break-point, xlg)) {
-            display: block;
-            margin: -38rem auto auto 1rem;
-            position: relative;
-            width: 29rem;
-            height: auto;
-        }
-
-    }
-
-    .checked{
-        width: 0.8rem;
-        margin:0rem 0.5rem auto 0.5rem;
-        line-height: 1rem;
-
-        @media screen and (min-width: map-get($break-point, md)) {
-            width: 1rem;
-            margin:0rem 0.5rem auto 0rem;
-            line-height: 1rem;
-
-        }
-
-        
-
-    }
-    .list{
-        margin: 0.5rem auto auto 1.6rem ;
-        width: auto;
-        position: absolute;
-        
-
-        @media screen and (min-width: map-get($break-point, tn)) { 
-            margin: -27.5rem auto auto 1.8rem ;
-        }
-
-        @media screen and (min-width: map-get($break-point, sm)) { 
-            margin: -27.5rem auto auto 4rem ;
-        }
-
-        @media screen and (min-width: map-get($break-point,md-x)) { 
-            margin: -30.5rem auto auto 8rem ;
-        }
-
-
-        @media screen and (min-width: map-get($break-point, md)) {
-            margin:-24rem  auto auto 24rem;
-            position: relative;
-        }
-        @media screen and (min-width: map-get($break-point, lg)) {
-            margin:-31rem  auto auto auto;
-            
-            
-        }
-        @media screen and (min-width: map-get($break-point, xlg)) {
-            margin:-35rem  auto auto auto;
-            
-            
-        }
-        ul{
-            margin-top: -10rem;
-            @media screen and (min-width: map-get($break-point, lg)) {
-                margin:0;
-                width: auto;
-                padding-right: 0rem;
-
-            }
-            
-        li{
-            
-            
-            font-size: 16px;
-            color: map-get($colors , main );
-            font-style: italic;
-            width: auto;
-            line-height: 2rem;
-            
-            
-            
-            @media screen and (min-width: map-get($break-point, tn)) { 
-                font-size: 18px;
-                line-height: 2.5rem;
-            }
-
             @media screen and (min-width: map-get($break-point, md)) {
-                margin:0rem  auto auto 0rem;
-                font-size: 16px;
                 
-                
-            }
-            @media screen and (min-width: map-get($break-point, lg)) {
-                margin:0;
-                width: auto;
-                padding-right: 0rem;
-                padding-left: 0;
-                font-size: 18px;
-    
-                
-                
-                
-                
-            }
-        }
-    }
-
-    .first-list{
-        width: auto;
-        margin-left: 0rem;
-    }
-
-    .second-list{
-        width: auto;
-        margin-left: 0rem;
-        
-    }
-
-    @media screen and (min-width: map-get($break-point, md)) {
-        .first-list{
-            width: auto;
-            margin-left: -12rem;
-        }
-
-        .second-list{
-            width: auto;
-            margin-left: -6rem;
-            
-        }
-
-    }
-    @media screen and (min-width: map-get($break-point, lg)) {
-        .first-list{
-            width: auto;
-            margin-left: 25rem;
-            line-height:3rem;
-        }
-
-        .second-list{
-            width: auto;
-            margin-left: -2rem;
-            
-        }
-
-    }
-    @media screen and (min-width: map-get($break-point, xlg)) {
-        .first-list{
-            width: auto;
-            margin-left: 30rem;
-        }
-
-        .second-list{
-            width: auto;
-            margin-left: -4rem;
-            
-        }
-
-    }
-    
-    }
-
-    .txt-creation{
-        margin: -16rem auto auto 2rem;
-        height: 5rem;
-        width: auto;
-
-        @media screen and (min-width: map-get($break-point, md)) {
-            margin:4rem  auto auto 0rem;
-            position: relative;
-            text-align: left;
-            
-            
-        }
-        p{
-            font-size: 18px;
-            line-height: 2rem;
-            max-width: auto;
-            margin-top: -48rem;
-
-            @media screen and (min-width: map-get($break-point, tn)) { 
-                margin-top: -48rem;
-                line-height: 2.5rem;
-            }
-
-            @media screen and (min-width: map-get($break-point, sm)) { 
-                
-                line-height: 3rem;
-            }
-            
-            
-        @media screen and (min-width: map-get($break-point, md-x)) {
-            
-            text-align: center;
-            width: 100%;
-            
-        }
-
-            
-
-            @media screen and (min-width: map-get($break-point, md)) {
-                margin:-34rem  auto auto -20rem;
-                color: map-get($colors,main);
-                font-size: 20px;
-                text-align:left;
-                line-height: 2rem;
-                width: auto;
-                position: absolute;
+                display: none;
                 
             }
             @media screen and (min-width: map-get($break-point, lg)) {
-                margin:-32rem  auto auto 25.8rem;
-                color: map-get($colors,main);
-                font-size: 20px;
-                text-align:left;
-                line-height: 2rem;
-                width: auto;
-                max-width:50%
-            }
-            @media screen and (min-width: map-get($break-point, xlg)) {
-                margin:-34rem  auto auto 28.8rem;
-                color: map-get($colors,main);
-                font-size: 20px;
-                text-align:left;
-                line-height: 2rem;
-                width: auto;
-                max-width:60%;
-            }
-        }
-    }
-    .title-creation{
-        p{
-            margin: -58rem auto auto 2rem ;
-            color: map-get($colors,main);
-            line-height: 2rem;
-            position: absolute;
-            font-weight: bold;
-            font-size: 20px;
-            text-align: left;
+                margin:0rem 0 auto auto;
+                display: block;
+                width: 90%;
+                height: 40rem;
+                
 
-            @media screen and (min-width: map-get($break-point, tn)) {
-                
-                margin: -57rem auto auto 2rem ;
-                
             }
-            @media screen and (min-width: map-get($break-point, md-x)) {
-            
-                text-align: center;
-                width: auto;
-                
-            }
-            
-        @media screen and (min-width: map-get($break-point, md)) {
-            margin:-35rem  auto auto -20rem;
-            text-align:left;
-            line-height: 2rem;
-            
+
         }
-        @media screen and (min-width: map-get($break-point, lg)) {
-            margin:-33.5rem auto auto 25.5rem;
-            color: map-get($colors,main);
-            font-size: 24px;
-            text-align: left;
-            width: 50%;
+
+        .cadre__creation--mobile{
+
+            width:100%;
+            margin:-4rem auto 4rem auto;
             
-            z-index: 997;
-            line-height: 2.5rem;
+
+            .img--creation{
+                height: auto;
+                z-index: 998;
+
+            }
+
+                @media screen and (min-width: map-get($break-point, md)) {
+                    margin:auto auto auto auto;
+                    display: block; 
+                    width:100%;
+                    
+                    
+                }
+                @media screen and (min-width: map-get($break-point, lg)) {
+                    margin:0rem auto auto auto;
+                    display: none;
+                }
+
+                .desc-creation{
+                    height: auto;
+                    width: 100%;
+                    position: relative;
+                    z-index: 999;
+                    margin-top: -28rem;
+                    
         
-        }
-        @media screen and (min-width: map-get($break-point, xlg)) {
-            margin:-35.5rem auto auto 28.8rem;
-            color: map-get($colors,main);
-            font-size: 24px;
-            text-align: left;
-            width: 50%;
-            z-index: 997;
-            line-height: 2.5rem;
+                    .title__creation{
+                        margin: auto auto auto 2rem ;
+                        color: map-get($colors,main);
+                        line-height: 2rem;
+                        z-index: 999;
+                        font-weight: inherit;
+                        font-size: 16px;
+                        text-align: left;
+                        position: relative;
+                        
+                        
         
+                    @media screen and (min-width: map-get($break-point, md)) {
+                        margin:auto  auto auto auto;
+                        text-align:left;
+                        line-height: 2rem;
+                        
+                    }
+                    @media screen and (min-width: map-get($break-point, lg)) {
+                        margin:auto auto auto auto;
+                        color: map-get($colors,main);
+                        font-size: 24px;
+                        text-align: left;
+                        width: 50%;
+                        
+                        z-index: 997;
+                        line-height: 2.5rem;
+                    
+                    }
+                    
+                }
+        
+                .txt__creation {
+                    z-index: 999;
+                    color: map-get($colors,main);
+                    line-height: 2rem;
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-align: left;
+                    margin:0rem auto -1rem 2rem;
+                
+        
+                    @media screen and (min-width: map-get($break-point, md)) {
+                        margin:4rem  auto auto 0rem;
+                        position: relative;
+                        text-align: left;
+                        
+                        
+                    }
+                    
+                }
+        
+        
+        
+                }
+        
+                .list{
+                    margin: 2rem auto auto 1.6rem ;
+                    width: auto;
+                    position: relative;
+                    z-index: 999;
+                    
+        
+                    @media screen and (min-width: map-get($break-point, md)) {
+                        margin:auto  auto auto 24rem;
+                        position: absolute;
+                    }
+                    @media screen and (min-width: map-get($break-point, lg)) {
+                        margin:auto  auto auto auto;
+                    }
+        
+                    .first-list{
+                        width: auto;
+                        margin-left: 0rem;
+        
+                    @media screen and (min-width: map-get($break-point, md)) {
+                        width: auto;
+                        margin-left: -12rem;
+                    }
+                    @media screen and (min-width: map-get($break-point, lg)) {
+                        width: auto;
+                        margin-left: 25rem;
+                        line-height:3rem;
+                    }
+                            
+                        li{
+                            
+                            
+                            font-size: 16px;
+                            color: map-get($colors , main );
+                            font-style: italic;
+                            width: auto;
+                            line-height: 1.5rem;
+                            margin-left: 1rem;
+                            margin-bottom:0rem;
+                            justify-content: flex-start;
+                            
+        
+                            @media screen and (min-width: map-get($break-point, md)) {
+                                margin:0rem  auto auto 0rem;
+                                font-size: 16px;
+                                
+                                
+                            }
+                            @media screen and (min-width: map-get($break-point, lg)) {
+                                margin:0;
+                                width: auto;
+                                padding-right: 0rem;
+                                padding-left: 0;
+                                font-size: 18px;
+                                
+                                
+                            }
+        
+                            .checked{
+                                width: 1rem;
+                                margin:0.8rem  0.5rem 0rem 0rem;
+                                
+                                justify-content: space-between;
+                                
+                        
+                                @media screen and (min-width: map-get($break-point, md)) {
+                                    width: 1rem;
+                                    margin:0rem 0.5rem auto 0rem;
+                                    line-height: 1rem;
+                        
+                                }
+                            }
+        
+        
+                            }
+                        
+                    }   
+                }
+
         }
-        }
+
     }
 
-    .point-creation{
-        display: none;
-
-        @media screen and (min-width: map-get($break-point, lg)) {
+    .btn__creation{
+        justify-content: center;
+        margin: auto 2rem auto auto;
         position: relative;
-        display:block;
-        margin-top: -2rem;
-        margin-left: 54rem;
-        width: 9rem;
-        z-index: 998;
+        display: flex;
+        flex-direction:end;
+        width: auto;
+    }
+    
+    .illu-creation{
+        position: relative;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
 
-        }
-        @media screen and (min-width: map-get($break-point, xlg)) {
+        .photo__creation{
+            display: block;
             position: relative;
+            
+
+            @media screen and (min-width: map-get($break-point, md)) {
+                display: none;
+                
+            }
+            @media screen and (min-width: map-get($break-point, lg)) {
+                display: block;
+                margin: auto auto auto 1rem;
+                position: relative;
+                width: 26rem;
+                height: auto;
+            }
+        
+        }
+
+        
+        .point__creation{
+            display: flex;
+            width: 40%;
+            float: right;
+            margin: -8.5rem auto auto auto;
+            
+            @media screen and (min-width: map-get($break-point, lg)) {
+            
             display:block;
             margin-top: -2rem;
-            margin-left: 60rem;
-            width: 12rem;
-            z-index: 998;
-
+            margin-left: auto;
+            width: 9rem;
+        
             }
-
+        }
     }
+        
+
 }
-
-
-
-
-
 
 
 

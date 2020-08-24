@@ -72,22 +72,22 @@ p{
 
 
 .btn {
-    background-color:map-get($colors , primaryGreen); 
-    border-bottom-right-radius:15px;
+    background-color: #4eb748;
+    border-bottom-right-radius: 15px;
     border: none;
     color: white;
-    padding: 0.5rem 0.5rem;
-    text-align: center;
-    margin:2rem auto;
-    text-align: center;
+    padding: 0.7rem 1rem;
+    margin: 2rem auto;
+    text-align: left;
     text-decoration: none;
     display: block;
     font-size: 20px;
     cursor: pointer;
-    max-width:70%;
+    max-width: 20rem;
     font-weight: bold;
-
+    justify-content: center;
     display: flex;
+    
     
 
         &:hover{
@@ -102,7 +102,7 @@ p{
         justify-content: space-between;
         width: 13%;
         height: 4%;
-        margin:0.2rem auto auto 1rem;
+        margin:0.2rem 1rem auto 1rem;
 
         
     }
