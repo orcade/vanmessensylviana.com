@@ -1,5 +1,3 @@
-URL minimir:
-
 
 URL gitub:
 https://orcade.github.io/vanmessensylviana.com/bemapack/index.html
