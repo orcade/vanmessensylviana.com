@@ -60,6 +60,7 @@
         display: none;
         @media screen and (min-width: map-get($break-point, lg)) {
             display: inline-block;
+            
         }
     }
     
@@ -71,6 +72,8 @@
         height: 2rem;
         margin: -3rem 1rem 1rem 1rem;
         right: 0;
+        position: fixed;
+        z-index: 1000;
         
         @include transform(rotate(0deg));
         @include transition(.5s ease-in-out);
