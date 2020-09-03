@@ -198,14 +198,14 @@
 
             text-align: right;
             position: fixed;
-            margin: -5rem auto auto -5rem;
+            margin: -5rem auto auto -27rem;
             display: inline-block;
             font-size: 18px;
             
         }
         
         @media screen and (min-width: map-get($break-point, lg)) {
-            margin: -5rem auto auto -5rem;
+            margin: -5rem auto auto -6rem;
         }
     }
     

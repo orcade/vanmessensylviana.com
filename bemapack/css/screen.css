@@ -339,7 +339,7 @@ p {
     width: 100%;
     text-align: right;
     position: fixed;
-    margin: -5rem auto auto -5rem;
+    margin: -5rem auto auto -27rem;
     display: inline-block;
     font-size: 18px;
   }
@@ -347,7 +347,7 @@ p {
 @media screen and (min-width: 1124px) {
   /* line 188, ../sass/layout/_l-layout.scss */
   .l-header .l-nav__main ul {
-    margin: -5rem auto auto -5rem;
+    margin: -5rem auto auto -6rem;
   }
 }
 /* line 212, ../sass/layout/_l-layout.scss */
